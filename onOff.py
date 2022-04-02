@@ -1,10 +1,10 @@
-from gpiozero import Servo
+from gpiozero import LED
 from time import sleep
 
-servo = Servo(4)
+led = LED(26)
 
 while True:
-    servo.value = None
-    time.sleep(10)
-    servo.value = 1
-    
+	led.off()
+	sleep(5)
+	led.on()
+	sleep(5)
